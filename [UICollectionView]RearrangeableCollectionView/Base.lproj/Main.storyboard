@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="PV2-TU-bgK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="dNM-8u-nLv">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
@@ -135,10 +135,83 @@
                             <outlet property="delegate" destination="PV2-TU-bgK" id="3Ut-5i-tef"/>
                         </connections>
                     </collectionView>
+                    <navigationItem key="navigationItem" id="ga1-bW-vxI">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="6G3-JU-tQD">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4C5-TN-tl0">
+                                <rect key="frame" x="-23" y="-15" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fLE-0c-Xv2" kind="unwind" unwindAction="finishConfigure:" id="dxd-9G-8ij"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zIS-57-ISN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="282" y="344"/>
+            <point key="canvasLocation" x="975" y="344"/>
+        </scene>
+        <!--Init View Controller-->
+        <scene sceneID="HPQ-AM-cJE">
+            <objects>
+                <viewController id="JxK-S8-R4b" customClass="InitViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mhs-q6-i80"/>
+                        <viewControllerLayoutGuide type="bottom" id="iBO-dP-2uV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5ZS-wE-FXJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hbw-Xh-HVE">
+                                <rect key="frame" x="20" y="518" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bdg-J1-F4Y"/>
+                                </constraints>
+                                <state key="normal" title="Customize">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="PV2-TU-bgK" kind="push" id="tph-hy-2IO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iBO-dP-2uV" firstAttribute="top" secondItem="Hbw-Xh-HVE" secondAttribute="bottom" constant="20" id="SK8-v4-tOg"/>
+                            <constraint firstItem="Hbw-Xh-HVE" firstAttribute="leading" secondItem="5ZS-wE-FXJ" secondAttribute="leading" constant="20" id="Xzh-xw-bJi"/>
+                            <constraint firstAttribute="trailing" secondItem="Hbw-Xh-HVE" secondAttribute="trailing" constant="20" id="iHg-2K-HfD"/>
+                            <constraint firstAttribute="centerX" secondItem="Hbw-Xh-HVE" secondAttribute="centerX" id="seE-jZ-mzn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZJk-Rk-STi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mqy-yt-1Wm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="fLE-0c-Xv2" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="444" y="344"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1te-Ok-9uR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dNM-8u-nLv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gxD-Md-feK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JxK-S8-R4b" kind="relationship" relationship="rootViewController" id="Fju-C1-yDs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DKR-MV-zeb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-88" y="344"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
