@@ -14,6 +14,7 @@
 /** @brief An array of NSString objects, data source of the collection view. */
 @property (strong, nonatomic) NSMutableArray *objects;
 @property (nonatomic, strong) NSMutableArray *innerArr;
+@property (nonatomic, strong) LAWInnerCollectionViewCell *containerCell;
 @end
 
 @implementation LAWCollectionViewController
@@ -72,12 +73,16 @@ static NSString * const reuseIdentifier = @"CellWithTable";
         LAWInnerCollectionViewCell *innerCell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
         innerCell.innerArr = _innerArr;
         cell = innerCell;
+        _containerCell = innerCell;
     }else{
         cell = (LAWNormalCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"NormalCell" forIndexPath:indexPath];
     }
     cell.cellTitle.text = _objects[indexPath.row];
     return cell;
+}
 
+-(UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
+    return [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"FooterCell" forIndexPath:indexPath];
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
@@ -218,5 +223,9 @@ static NSString * const reuseIdentifier = @"CellWithTable";
     snapshot.layer.shadowOpacity = 0.4;
     
     return snapshot;
+}
+- (IBAction)finishConfigure:(id)sender {
+    NSLog(@"Outter Array: %@", _objects);
+    NSLog(@"Inner Array: %@", _containerCell.innerArr);
 }
 @end

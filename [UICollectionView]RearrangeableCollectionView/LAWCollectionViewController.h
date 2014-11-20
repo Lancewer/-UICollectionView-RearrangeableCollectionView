@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface LAWCollectionViewController : UICollectionViewController<UICollectionViewDelegateFlowLayout>
-
+- (IBAction)finishConfigure:(id)sender;
 @end

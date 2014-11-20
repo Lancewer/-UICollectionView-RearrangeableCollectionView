@@ -15,7 +15,7 @@
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="yDJ-ws-89R">
                             <size key="itemSize" width="320" height="176"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="50" height="50"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
@@ -107,6 +107,29 @@
                                 </connections>
                             </collectionViewCell>
                         </cells>
+                        <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FooterCell" id="BcL-pi-dC9">
+                            <rect key="frame" x="0.0" y="220" width="320" height="50"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnb-5E-dAt">
+                                    <rect key="frame" x="20" y="10" width="280" height="30"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <state key="normal" title="Finish">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="finishConfigure:" destination="PV2-TU-bgK" eventType="touchUpInside" id="Kyw-WX-niT"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="tnb-5E-dAt" firstAttribute="leading" secondItem="BcL-pi-dC9" secondAttribute="leading" constant="20" id="MR1-hM-9Zz"/>
+                                <constraint firstAttribute="trailing" secondItem="tnb-5E-dAt" secondAttribute="trailing" constant="20" id="NzG-4D-YT7"/>
+                                <constraint firstAttribute="centerY" secondItem="tnb-5E-dAt" secondAttribute="centerY" id="oIr-Fv-SVW"/>
+                                <constraint firstAttribute="centerX" secondItem="tnb-5E-dAt" secondAttribute="centerX" id="sEc-9E-pto"/>
+                            </constraints>
+                        </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="PV2-TU-bgK" id="AX9-q6-p7P"/>
                             <outlet property="delegate" destination="PV2-TU-bgK" id="3Ut-5i-tef"/>
