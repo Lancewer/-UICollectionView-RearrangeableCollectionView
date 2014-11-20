@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		2127ADA21A1DBA4E00EE7D1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2127ADA11A1DBA4E00EE7D1C /* main.m */; };
 		2127ADA51A1DBA4E00EE7D1C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2127ADA41A1DBA4E00EE7D1C /* AppDelegate.m */; };
-		2127ADA81A1DBA4E00EE7D1C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2127ADA71A1DBA4E00EE7D1C /* ViewController.m */; };
 		2127ADAB1A1DBA4E00EE7D1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2127ADA91A1DBA4E00EE7D1C /* Main.storyboard */; };
 		2127ADAD1A1DBA4E00EE7D1C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2127ADAC1A1DBA4E00EE7D1C /* Images.xcassets */; };
 		2127ADB01A1DBA4E00EE7D1C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2127ADAE1A1DBA4E00EE7D1C /* LaunchScreen.xib */; };
 		2127ADBC1A1DBA4E00EE7D1C /* _UICollectionView_RearrangeableCollectionViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2127ADBB1A1DBA4E00EE7D1C /* _UICollectionView_RearrangeableCollectionViewTests.m */; };
+		2127ADC71A1DBB1D00EE7D1C /* LAWCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2127ADC61A1DBB1D00EE7D1C /* LAWCollectionViewController.m */; };
+		2127ADCD1A1DBD4700EE7D1C /* LAWInnerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2127ADCC1A1DBD4700EE7D1C /* LAWInnerCollectionViewCell.m */; };
+		2127ADD01A1DC68B00EE7D1C /* LAWNormalCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2127ADCF1A1DC68B00EE7D1C /* LAWNormalCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +34,18 @@
 		2127ADA11A1DBA4E00EE7D1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2127ADA31A1DBA4E00EE7D1C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2127ADA41A1DBA4E00EE7D1C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2127ADA61A1DBA4E00EE7D1C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2127ADA71A1DBA4E00EE7D1C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2127ADAA1A1DBA4E00EE7D1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2127ADAC1A1DBA4E00EE7D1C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2127ADAF1A1DBA4E00EE7D1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2127ADB51A1DBA4E00EE7D1C /* [UICollectionView]RearrangeableCollectionViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "[UICollectionView]RearrangeableCollectionViewTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2127ADBA1A1DBA4E00EE7D1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2127ADBB1A1DBA4E00EE7D1C /* _UICollectionView_RearrangeableCollectionViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _UICollectionView_RearrangeableCollectionViewTests.m; sourceTree = "<group>"; };
+		2127ADC51A1DBB1D00EE7D1C /* LAWCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAWCollectionViewController.h; sourceTree = "<group>"; };
+		2127ADC61A1DBB1D00EE7D1C /* LAWCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAWCollectionViewController.m; sourceTree = "<group>"; };
+		2127ADCB1A1DBD4700EE7D1C /* LAWInnerCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAWInnerCollectionViewCell.h; sourceTree = "<group>"; };
+		2127ADCC1A1DBD4700EE7D1C /* LAWInnerCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAWInnerCollectionViewCell.m; sourceTree = "<group>"; };
+		2127ADCE1A1DC68B00EE7D1C /* LAWNormalCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAWNormalCollectionViewCell.h; sourceTree = "<group>"; };
+		2127ADCF1A1DC68B00EE7D1C /* LAWNormalCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAWNormalCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +89,16 @@
 			children = (
 				2127ADA31A1DBA4E00EE7D1C /* AppDelegate.h */,
 				2127ADA41A1DBA4E00EE7D1C /* AppDelegate.m */,
-				2127ADA61A1DBA4E00EE7D1C /* ViewController.h */,
-				2127ADA71A1DBA4E00EE7D1C /* ViewController.m */,
 				2127ADA91A1DBA4E00EE7D1C /* Main.storyboard */,
+				2127ADCB1A1DBD4700EE7D1C /* LAWInnerCollectionViewCell.h */,
+				2127ADCC1A1DBD4700EE7D1C /* LAWInnerCollectionViewCell.m */,
+				2127ADCE1A1DC68B00EE7D1C /* LAWNormalCollectionViewCell.h */,
+				2127ADCF1A1DC68B00EE7D1C /* LAWNormalCollectionViewCell.m */,
 				2127ADAC1A1DBA4E00EE7D1C /* Images.xcassets */,
 				2127ADAE1A1DBA4E00EE7D1C /* LaunchScreen.xib */,
 				2127AD9F1A1DBA4E00EE7D1C /* Supporting Files */,
+				2127ADC51A1DBB1D00EE7D1C /* LAWCollectionViewController.h */,
+				2127ADC61A1DBB1D00EE7D1C /* LAWCollectionViewController.m */,
 			);
 			path = "[UICollectionView]RearrangeableCollectionView";
 			sourceTree = "<group>";
@@ -219,9 +229,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2127ADA81A1DBA4E00EE7D1C /* ViewController.m in Sources */,
 				2127ADA51A1DBA4E00EE7D1C /* AppDelegate.m in Sources */,
 				2127ADA21A1DBA4E00EE7D1C /* main.m in Sources */,
+				2127ADD01A1DC68B00EE7D1C /* LAWNormalCollectionViewCell.m in Sources */,
+				2127ADCD1A1DBD4700EE7D1C /* LAWInnerCollectionViewCell.m in Sources */,
+				2127ADC71A1DBB1D00EE7D1C /* LAWCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
