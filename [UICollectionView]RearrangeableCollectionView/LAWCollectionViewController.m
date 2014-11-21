@@ -160,7 +160,8 @@ static NSString * const reuseIdentifier = @"CellWithTable";
                     snapshot.alpha = 0.98;
                     
                     // Black out.
-                    cell.backgroundColor = [UIColor blackColor];
+                    cell.alpha = 0.0;
+//                    cell.backgroundColor = [UIColor blackColor];
                 } completion:nil];
             }
             break;
@@ -196,7 +197,8 @@ static NSString * const reuseIdentifier = @"CellWithTable";
                 snapshot.alpha = 0.0;
                 
                 // Undo the black-out effect we did.
-                cell.backgroundColor = [UIColor whiteColor];
+                cell.alpha = 1.0;
+//                cell.backgroundColor = [UIColor whiteColor];
                 
             } completion:^(BOOL finished) {
                 
